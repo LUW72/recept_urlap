@@ -1,0 +1,27 @@
+név [étel neve]
+elékszítési idő [idő]
+adagszám [adag]
+
+Recept nehézség(radio button)
+	. Egyszerű
+	. Haladóknak
+	. Nehéz
+	. Legnehezebb
+
+tápérték
+	energia[kcal]
+	zsír[g]
+	szénhidrát[g]
+	fehérje[g]
+
+Allergének(checklist)
+	. Toás
+	. Glutén
+	. Laktóz
+	. Mogyoró
+	. hal
+	
+Recept()
+	[bekezdésekre bontva]
+
++ datum

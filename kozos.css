@@ -1,5 +1,18 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  padding: 60px;
+  text-align: center;
+  background-image: url("kepek/header/fejlec02.jpg");
+  object-fit: cover;
+  color: #ff13f0;
+  font-size: 35px;
+}
+
+header h1{
+  font-weight: 1200;
 }
 
 ul {
@@ -23,11 +36,11 @@ ul {
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #ffc4fb;
   }
   
   .active {
-    background-color: #04AA6D;
+    background-color: #ff13f0;
   }
 
   footer p{
