@@ -46,3 +46,9 @@ ul {
   footer p{
     text-align: center;
   }
+
+  @media screen and (max-width:700px) {
+    li.right,
+    li {float: none;}
+    
+  }
