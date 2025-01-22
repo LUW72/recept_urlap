@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+fieldset, .content{
+    border: 1pt solid rgb(128, 128, 128);
+    border-radius: 7px;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+article h2{
+    text-align: center;
+}
+
+form{
+    max-width: 500px;
+    margin: auto;
+}
+
+form input{
+    border-radius: 7px;
+}
+
+form .adatok{
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding: 5px;
+}
+form .adatok label, form .tapertek label, .nehezseg, .allergenek{
+    text-align: right;
+    padding-right: 8px;
+}
+
+form .nehezseg label, form .allergenek label{
+    padding-left: 10px;
+}
+
+form .tapertek{
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding: 5px;
+    text-align: right;
+}
+
+form .tapertek input{
+    width: 50px;
+}
+
+form .leiras input{
+    height:200px;
+    width: 400px;
+    font-size:14pt;
+}
+
+form textarea{
+    max-width: 450px;
+    min-height: 50px;
+    border-radius: 7px;
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+@media screen and (max-width:700px) {
+    form{
+        max-width: 100%;
+    }
+
+    form textarea{
+        max-width: 700px;
+        min-height: 50px;
+    }
+}

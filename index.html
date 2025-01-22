@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recept Feltöltés</title>
     <link rel="stylesheet" href="kozos.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -19,7 +19,85 @@
                 <li><a href="receptgyujtemeny.html">Receptgyűjtemény</a></li>
               </ul>
         </nav>
-        
+        <article>
+            <h2>Recept feltölése</h2>
+            <form class="content" action="feldolgoz.php" method="post">
+                <fieldset>
+                    <legend >A recept adatai</legend>
+                    <div class="adatok">
+                        <label for="nev">Az étel neve</label>
+                        <input type="text" name="nev" id="nev" placeholder="Példa gulyás" pattern="">
+                    </div>
+                    <div class="adatok">
+                        <label for="elk_ido">Elkészítési idő</label>
+                        <input type="text" name="elk_ido" id="elk_ido" placeholder="pl: 30 perc" pattern="">
+                    </div>
+                    <div class="adatok">
+                        <label for="ad_szam">Adagok száma</label>
+                        <input type="text" name="ad_szam" id="ad_szam" placeholder="pl: 3 adag" pattern="">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Recept nehézség</legend>
+                    <div class="nehezseg">
+                        <label for="egyszeru">Egyszerű</label>
+                        <input type="radio" id="egysz" name="nehezseg" value="Egyszerű">
+                        <label for="haladoknak">Haladoknak</label>
+                        <input type="radio" id="halad" name="nehezseg" value="Haladoknak">
+                        <label for="nehez">Nehéz</label>
+                        <input type="radio" id="neh" name="nehezseg" value="Nehéz">
+                        <label for="legnehezebb">Legnehezebb</label>
+                        <input type="radio" id="legneh" name="nehezseg" value="Legnehezebb">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tápérték</legend>
+                    <div class="tapertek">
+                        <label for="nev">Energia</label>
+                        <input type="text" name="energia" id="energia" placeholder="kcal" pattern="">
+                    </div>
+                    <div class="tapertek">
+                        <label for="elk_ido">Zsír</label>
+                        <input type="text" name="zsir" id="zsir" placeholder="gramm" pattern="">
+                    </div>
+                    <div class="tapertek">
+                        <label for="ad_szam">Szénhidrát</label>
+                        <input type="text" name="szenhidrat" id="szenhidrat" placeholder="gramm" pattern="">
+                    </div>
+                    <div class="tapertek">
+                        <label for="ad_szam">Fehérje</label>
+                        <input type="text" name="feherje" id="feherje" placeholder="gramm" pattern="">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Allergének</legend>
+                    <div class="allergenek">
+                        <label for="alt">Tojás</label>
+                        <input type="checkbox" id="tjs" name="allergenek" value="Tojás">
+
+                        <label for="no">Glutén</label>
+                        <input type="checkbox" id="glt" name="allergenek" value="Glutén">
+                        
+                        <label for="mas">Laktóz</label>
+                        <input type="checkbox" id="lkt" name="allergenek" value="Laktóz">
+
+                        <label for="mas">Mogyorófélék</label>
+                        <input type="checkbox" id="mgy" name="allergenek" value="Laktóz">
+
+                        <label for="mas">Hal</label>
+                        <input type="checkbox" id="hal" name="allergenek" value="Hal">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>A recept leírása</legend>
+                    <div class="leiras">
+                        <p><label for="leiras">(A lépéseket tagold bekezdésekre)</label></p>
+                        <textarea id="leiras" name="leiras" rows="4" cols="50">A recept elkészítéséhez töröld ki ezt a szöveget...</textarea>
+                </fieldset>
+                <div>
+                    
+                    <input type="submit" class="button" value="Elküld" id="submit">
+                </div>
         </article>
         <footer>
             <p>(c)Menő receptes oldal</p>
