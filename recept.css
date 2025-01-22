@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+.receptkep{
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+.reckep{
+    float: left;
+    width: 20%;
+}
+.types{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    background-color: white;
+    max-width: 400px;
+}
+
+
+.types .rec{
+    background-color: red;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.type .egy{
+    background-color: greenyellow;
+    list-style-type: none;
+    text-decoration: none;
+}
