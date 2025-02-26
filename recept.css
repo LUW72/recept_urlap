@@ -6,6 +6,7 @@
     float: left;
     width: 100%;
     max-width: 500px;
+    margin: 10px;
 }
 
 .reckep{
@@ -17,7 +18,10 @@
     grid-template-columns: 1fr 1fr;
     color: white;
     background-color: white;
-    max-width: 400px;
+    gap: 5px;
+    text-align: center;
+    padding: 5px;
+    
 }
 
 
@@ -25,10 +29,13 @@
     background-color: red;
     list-style-type: none;
     text-decoration: none;
+    padding: 5px;
+    width: 100%;
 }
 
 .type .egy{
     background-color: greenyellow;
     list-style-type: none;
     text-decoration: none;
+    padding: 5px;
 }
